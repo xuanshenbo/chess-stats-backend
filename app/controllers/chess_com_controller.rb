@@ -33,4 +33,11 @@ class ChessComController < ApplicationController
 
     render json: data
   end
+
+  def all_games
+    @username = params[:username]
+    chess_com_service = ChessComService.new
+    data = chess_com_service.get_all_games(@username)
+    render json: data
+  end
 end
