@@ -34,3 +34,6 @@
 
 # system
 .DS_Store
+
+# Ignore byebug command history file.
+.byebug_history
